@@ -1,0 +1,30 @@
+@use 'styles/variables';
+
+$block: '.#{variables.$ns}color-converter';
+
+#{$block} {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    min-height: 100vh;
+
+    &__input {
+        width: 170px;
+        padding: 20px 45px;
+
+        font-size: 18px;
+        text-align: center;
+
+        outline: none;
+        border: none;
+
+        box-sizing: content-box;
+
+        & + & {
+            margin-block-start: 6px;
+        }
+    }
+}
