@@ -39,7 +39,14 @@ export function ColorConverter() {
 
     return (
         <div className={block()} style={{backgroundColor: getBackgroundColor(hex, completed, error)}}>
-            <input className={block('input')} type="text" name="hex" value={hex} onChange={handleChangeHex} />
+            <input
+                className={block('input')}
+                placeholder="Введите hex"
+                type="text"
+                name="hex"
+                value={hex}
+                onChange={handleChangeHex}
+            />
             <input
                 className={block('input')}
                 type="text"
